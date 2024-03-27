@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="MainContainer">
+      <!-- <img src="logo.png">  -->
+        <h4 id="Sname">EASTFORT</h4>
+        <div class="SubContainer">
+        <button type="button" onclick="prev()">&Lt;</button>
+        <div class="TableContainer">
+            <table>
+                <tr>
+                <th>BUS ID</th>
+                <th>ROUTE</th>
+                <th>ATA</th>
+                <th>ETA</th>
+                <th>STATUS</th>
+                </tr>
+                <tr>
+                <td id="busid1">0001</td>
+                <td>PVR-ESF</td>
+                <td>13:20</td>
+                <td>13:30</td>
+                <td id="status1">EARLY</td>
+                </tr>
+                <tr>
+                    <td id="busid2">0002</td>
+                    <td>JJK-TKY</td>
+                    <td>14:50</td>
+                    <td>14:30</td>
+                    <td id="status2">LATE</td>
+                </tr>
+                <tr>
+                    <td id="busid3">0003</td>
+                    <td>DSR-TJO</td>
+                    <td>15:00</td>
+                    <td>15:00</td>
+                    <td id="status3">ON-TIME</td>
+                </tr>
+                <tr>
+                    <td id="busid4">0004</td>
+                    <td>DSR-TJO</td>
+                    <td>15:00</td>
+                    <td>15:00</td>
+                    <td id="status4">ON-TIME</td>
+                </tr>
+                <tr>
+                    <td id="busid5">0005</td>
+                    <td>PVR-ESF</td>
+                    <td>13:20</td>
+                    <td>13:30</td>
+                    <td id="status5">EARLY</td>
+                    </tr>
+            </table>
+        </div>
+        <button type="button">&Gt;</button>
+        <script>
+            var StationName = document.getElementById('Sname');
+            var busid1 = document.getElementById('busid1');
+            var busid2 = document.getElementById('busid2');
+            var busid3 = document.getElementById('busid3');
+            var busid4 = document.getElementById('busid4');
+            var busid5 = document.getElementById('busid5');
+            var data1 = ["THAMPANOOR", "0018", "00019", "0020", "0021", "0022","EARLY"];
+            var data2 = ["KOWDIAR", "0021", "0023", "0024", "0025", "0026","LATE"];
+            var data3 = ["KOVALAM", "0051", "0052", "0053", "0056", "0057","ON-TIME"]; 
+            var data4 = ["EASTFORT", "0001", "0002", "0003", "0004", "0005","LATE"]; 
+            var carray = data1;
+            var cindex = 0;
+
+            function updateText() {
+                StationName.textContent = carray[cindex];
+                busid1.textContent = carray[cindex + 1];
+                busid2.textContent = carray[cindex + 2];
+                busid3.textContent = carray[cindex + 3];
+                busid4.textContent = carray[cindex + 4];
+                busid5.textContent = carray[cindex + 5];
+                status.textContent = carray[cindex + 6];
+                cindex += 8;
+
+                if (cindex >= carray.length) {
+                    cindex = 0;
+                    nextArray(); // Switch to the other array
+                }
+            }
+
+            setInterval(updateText, 3500);
+
+
+            function nextArray() {
+                if (carray === data1){
+                    carray = data2;
+                }else if(carray === data2)
+                {
+                    carray = data3;
+                }
+                else if(carray === data3)
+                {
+                    carray = data4;
+                }
+                else if(carray === data4)
+                {
+                    carray = data1;
+                }
+            }
+        </script>
+        </div>
+    </div>
+    
+</body>
+</html>

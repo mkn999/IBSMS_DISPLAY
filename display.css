@@ -1,0 +1,96 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;  
+background-color: #0A174E;
+color: #F5D042;
+}
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+}
+.SubContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Sname{
+    align-self: center;
+    font-size: 30px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+button{
+    margin: 30px;
+    background-color: transparent;
+    border: 1px solid  #fdfdfd00;
+    color:  #F5D042;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+.TableContainer{
+    align-self: center;
+    
+}
+table,th,td{
+    border: 1px solid rgb(255, 255, 255);
+}  
+th,td{
+    padding: 20px;
+} 
+table th{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+
+table{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.LateId{
+    color: rgb(255, 0, 0);
+}
+
+.EarlyId{
+        color:  #F5D042;
+}
+
+@media screen and (max-width:767px){
+    body{
+        background-color: #F5D042;
+        color: #0A174E;
+    }
+    .MainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    table,th,td{
+        border: 1px solid rgb(255, 255, 255);
+    }  
+    th,td{
+        padding: 0px;
+    } 
+    table th{
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+    }
+    table{
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+    }
+}
