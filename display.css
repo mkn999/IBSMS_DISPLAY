@@ -75,8 +75,19 @@ table{
         display: flex;
         flex-direction: column;
     }
+    #Sname{
+        align-self: center;
+        font-size: 30px;
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .TableContainer{
+        align-self: center;
+    }
     table,th,td{
         border: 1px solid rgb(255, 255, 255);
+        
     }  
     th,td{
         padding: 0px;
@@ -88,9 +99,12 @@ table{
         font-size: 20px;
     }
     table{
+        width: 100vw;
+        height: 90vh;
         font-family: "Space Mono", monospace;
-        font-weight: 400;
+        font-weight: 200;
         font-style: normal;
-        font-size: 25px;
+        font-size: 24px;
+        margin: 0px 10px;
     }
 }
