@@ -75,8 +75,8 @@ table{
         color: #0A174E;
     }
     .intro_container{
-        display: block;
-        position: fixed;
+    display: block;
+    position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -86,23 +86,30 @@ table{
       flex-direction: column;
       z-index: 9999;
       transition: opacity 2s ease-in-out; 
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+    
 
     }
     .intro_container h3{
       display: block;
       font-family: "Inter", sans-serif;
       font-size: 100px;
-      color: white;
       font-style: bold;
       font-weight: 700;
       text-align: center;
+      margin: 0;
+      color: #F5D042;
+
+
     }
     .intro_container p {
         display: block;
         font-family: "Inter", sans-serif;
         font-size: 20px;
         color: white;
-        
+        margin: 0;
       }
     #intro-page.hidden {
       opacity: 0;
