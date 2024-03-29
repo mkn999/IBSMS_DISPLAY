@@ -9,6 +9,9 @@ color: #F5D042;
     display: flex;
     flex-direction: column;
 }
+.intro_container{
+    display: none;
+}
 .SubContainer{
     display: flex;
     align-items: center;
@@ -70,6 +73,40 @@ table{
     body{
         background-color: #F5D042;
         color: #0A174E;
+    }
+    .intro_container{
+        display: block;
+        position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0A174E; 
+      display: flex;
+      flex-direction: column;
+      z-index: 9999;
+      transition: opacity 2s ease-in-out; 
+
+    }
+    .intro_container h3{
+      display: block;
+      font-family: "Inter", sans-serif;
+      font-size: 100px;
+      color: white;
+      font-style: bold;
+      font-weight: 700;
+      text-align: center;
+    }
+    .intro_container p {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        color: white;
+        
+      }
+    #intro-page.hidden {
+      opacity: 0;
+      pointer-events: none;
     }
     .MainContainer{
         display: flex;
