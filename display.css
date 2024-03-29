@@ -9,6 +9,12 @@ color: #F5D042;
     display: flex;
     flex-direction: column;
 }
+input{
+display: none;    
+}
+.navBar{
+    display: none;
+}
 .intro_container{
     display: none;
 }
@@ -26,16 +32,6 @@ color: #F5D042;
     margin-bottom: 20px;
 }
 
-button{
-    margin: 30px;
-    background-color: transparent;
-    border: 1px solid  #fdfdfd00;
-    color:  #F5D042;
-    font-size: 20px;
-    border-radius: 10px;
-    width: 90px;
-    height: 90px;
-}
 
 .TableContainer{
     align-self: center;
@@ -74,6 +70,32 @@ table{
         background-color: #F5D042;
         color: #0A174E;
     }
+    .navBar{
+        margin: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    input{
+        display: block;  
+        width: 90%;
+        height: 40px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        border: none; 
+        outline: none;
+        font-family: "Space Mono", monospace;
+    }
+    #Sbutton{
+        font-size: 15px;
+        background-color: #0A174E;
+        color: #F5D042;
+        border-radius: 10px;
+        border: none;
+        margin-left: 5px;
+        font-family: "Space Mono", monospace;
+        
+    }
+
     .intro_container{
     display: block;
     position: fixed;
@@ -85,12 +107,10 @@ table{
       display: flex;
       flex-direction: column;
       z-index: 9999;
-      transition: opacity 2s linear; 
+      transition: opacity 1s linear; 
       text-align: center;
       align-content: center;
       justify-content: center;
-    
-
     }
     .intro_container h3{
       display: block;
@@ -101,8 +121,6 @@ table{
       text-align: center;
       margin: 0;
       color: #F5D042;
-
-
     }
     .intro_container p {
         display: block;
@@ -121,9 +139,9 @@ table{
     }
     #Sname{
         align-self: center;
-        font-size: 30px;
-        font-family: "Space Mono", monospace;
-        font-weight: 700;
+        font-size: 40px;
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
         font-style: normal;
     }
     .TableContainer{
