@@ -85,7 +85,7 @@ table{
       display: flex;
       flex-direction: column;
       z-index: 9999;
-      transition: opacity 2s ease-in-out; 
+      transition: opacity 4s ease-in-out; 
       text-align: center;
       align-content: center;
       justify-content: center;
