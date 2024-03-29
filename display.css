@@ -69,7 +69,7 @@ table{
         color:  #F5D042;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:480px){
     body{
         background-color: #F5D042;
         color: #0A174E;
