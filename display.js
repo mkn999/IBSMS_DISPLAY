@@ -128,22 +128,22 @@ status2.textContent = stations[searchValue][8];
 route2.textContent = stations[searchValue][9];
 //bus 3
 busid3.textContent = stations[searchValue][10];
-ata3.textContent = stations[searchValue][10];
-eta3.textContent = stations[searchValue][11];
-status3.textContent = stations[searchValue][12];
-route3.textContent = stations[searchValue][13];
+ata3.textContent = stations[searchValue][11];
+eta3.textContent = stations[searchValue][12];
+status3.textContent = stations[searchValue][13];
+route3.textContent = stations[searchValue][14];
 //bus 4
-busid4.textContent = stations[searchValue][14];
-ata4.textContent = stations[searchValue][15];
-eta4.textContent = stations[searchValue][16];
-status4.textContent = stations[searchValue][17];
-route4.textContent = stations[searchValue][18];
+busid4.textContent = stations[searchValue][15];
+ata4.textContent = stations[searchValue][16];
+eta4.textContent = stations[searchValue][17];
+status4.textContent = stations[searchValue][18];
+route4.textContent = stations[searchValue][19];
 //bus 5
-busid5.textContent = stations[searchValue][19];
-ata5.textContent = stations[searchValue][19];
-eta5.textContent = stations[searchValue][20];
-status5.textContent = stations[searchValue][21];
-route5.textContent = stations[searchValue][22];
+busid5.textContent = stations[searchValue][20];
+ata5.textContent = stations[searchValue][21];
+eta5.textContent = stations[searchValue][22];
+status5.textContent = stations[searchValue][23];
+route5.textContent = stations[searchValue][24];
 } else {
 alert(searchValue + " stop is not found !")
 }
