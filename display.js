@@ -233,24 +233,14 @@ var stations = {
   var counter = 0;
   forward_button.addEventListener('click', function() {
     // This code will run when the button is clicked
-
-  if (counter<stationKeys.length){
-    searchValue=stationKeys[counter]
-    StationName.textContent = searchValue.toUpperCase()
-    counter++;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+      if (counter < stationKeys.length) {
+        console.log(counter, stationKeys[counter]);
+        var searchValue = stationKeys[counter];
+        StationName.textContent = searchValue.toUpperCase();
+        counter++;
+      } else {
+        console.log("end"); //not updating in Html element
+      }
 /*
     if (counter == 1){
       searchValue = stationKeys[0];
