@@ -25,16 +25,30 @@ display: none;
 }
 #Sname{
     align-self: center;
-    font-size: 30px;
-    font-family: "Space Mono", monospace;
+    font-size:50px;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
-
+.fb_button{
+    font-size: 20px;
+    background-color: #F5D042;
+    color: #0A174E;
+    border-radius: 10px;
+    font-weight: 500;
+    border: none;
+    margin: 15px;
+    font-family: "Space Mono", monospace;
+}
+.fb_button:hover{
+    background-color:  #e6e0ca;;
+}
 .TableContainer{
     align-self: center;
+    
     
 }
 table,th,td{
@@ -74,6 +88,9 @@ table{
         margin: 20px;
         display: flex;
         justify-content: flex-end;
+    }
+    .fb_button{
+        display: none;
     }
     input{
         display: block;  

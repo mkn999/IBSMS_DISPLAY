@@ -20,18 +20,14 @@
     </div>
     <div class="MainContainer" id="MainContainer">
         <nav>
-            <div class="navBar">
+            <div class="navBar"> <!--for mobile screens-->
                 <input type="text"  id="input" placeholder="search stations">
                 <button id="Sbutton" onclick="StationSearch()">Search</button>
             </div>
-            <script>
-                
-            </script>
         </nav>
-      <!-- <img src="logo.png">  -->
         <h4 id="Sname">EASTFORT</h4>
         <div class="SubContainer">
-        <!--<button type="button" onclick="prev()">&Lt;</button>-->
+        <button class="fb_button" id="backward" onclick="backward()">&Lt;</button>
         <div class="TableContainer">
             <table>
                 <tr>
@@ -78,7 +74,7 @@
                     </tr>
             </table>
         </div>
-        <!--<button type="button">&Gt;</button>-->
+        <button class="fb_button" id="forward" onclick="forward()">&Gt;</button>
         </div>
     </div>
     
